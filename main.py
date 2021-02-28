@@ -23,7 +23,7 @@ class Example(QMainWindow):
         self.repaint()
 
     def draw_circles(self, qp):
-        qp.setBrush(QColor(255, 255, 0))
+        qp.setBrush(QColor(randrange(0, 255), randrange(0, 255), randrange(0, 255)))
         width = height = randrange(50, 100)
         qp.drawEllipse(randrange(50, 300), randrange(50, 300), width, height)
 
